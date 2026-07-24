@@ -1,17 +1,71 @@
-# CS 320 Software Testing Portfolio
+# Software Testing and Quality Assurance
 
-This repository contains selected work from CS 320: Software Testing, Automation, and Quality Assurance. The files included show my work with the contact service from Project One and my summary and reflections report from Project Two. Together, these artifacts show how I created unit tests, checked software requirements, and reflected on testing strategies used to improve software quality.
+**Course:** CS320 – Software Testing, Automation, and Quality Assurance  
+**University:** Southern New Hampshire University
 
-## Reflection
+## Overview
 
-### How can I ensure that my code, program, or software is functional and secure?
+This repository contains projects completed for CS320 – Software Testing, Automation, and Quality Assurance at Southern New Hampshire University.
 
-I can ensure that my code is functional and secure by testing it against the requirements and checking both expected and unexpected inputs. For the contact service, I used JUnit tests to make sure fields such as the contact ID, first name, last name, phone number, and address followed the required rules. I also tested that contacts could be added, updated, and deleted correctly. Security also means avoiding careless design choices, such as allowing invalid data, null values, or uncontrolled changes to important fields. Writing tests helped me catch issues earlier and made the program more reliable.
+The work focuses on designing Java service applications and using JUnit tests to verify that software requirements are met. The projects include contact, task, and appointment management services with validation rules, service operations, and automated unit tests.
 
-### How do I interpret user needs and incorporate them into a program?
+## Projects Included
 
-I interpret user needs by carefully reading the requirements and turning them into specific features and rules for the program. In this project, the user needed a contact service that could store and manage contact information while following limits for each field. I used those requirements to decide what the Contact and ContactService classes needed to do. I also used the requirements to guide my test cases, so I could make sure the program matched what the user asked for instead of just what I assumed it should do.
+### Contact Service
 
-### How do I approach designing software?
+The contact service stores and manages contact records while enforcing requirements for contact IDs, names, phone numbers, and addresses.
 
-I approach designing software by breaking the problem into smaller parts first. For the contact service, I separated the contact object from the service that manages the contacts. This made the code easier to understand, test, and update. I also try to think about the requirements before writing too much code, because that helps me avoid extra work or features that are not needed. Testing is also part of my design process because it helps confirm that each part of the program works before moving on.
+### Task Service
+
+The task service supports adding, updating, and deleting tasks while validating task IDs, names, and descriptions.
+
+### Appointment Service
+
+The appointment service manages appointment records while validating appointment IDs, dates, and descriptions.
+
+## Technologies Used
+
+- Java
+- JUnit
+- Eclipse
+- Object-Oriented Programming
+- Unit Testing
+
+## Skills Demonstrated
+
+- Writing and executing unit tests
+- Translating software requirements into test cases
+- Validating expected and invalid inputs
+- Object-oriented software design
+- Exception handling
+- Requirement-based testing
+- Software quality assurance
+- Debugging and code review
+
+## Testing Approach
+
+The test classes verify both valid and invalid conditions for each application component. Tests confirm that required fields meet length and format rules, null values are rejected, duplicate identifiers are prevented, and service operations perform as expected.
+
+This approach helped ensure that the applications matched the provided requirements rather than relying only on successful program execution.
+
+## Repository Contents
+
+- Contact application and JUnit tests
+- Task application and JUnit tests
+- Appointment application and JUnit tests
+- Project One source files
+- Project Two summary and reflection report
+
+## What I Learned
+
+This project strengthened my understanding of how automated testing supports functional, reliable, and maintainable software. I learned how to convert requirements into testable conditions, evaluate expected and unexpected inputs, and use JUnit tests to identify defects before software is released.
+
+I also learned that testing should be incorporated throughout the development process rather than treated as a final step.
+
+## Potential Enhancements
+
+- Organize source and test files into standard Java project folders
+- Add integration testing between application components
+- Expand test coverage for additional edge cases
+- Add automated test execution through a continuous integration workflow
+- Generate formal code-coverage reports
