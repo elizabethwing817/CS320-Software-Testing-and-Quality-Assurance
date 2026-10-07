@@ -1,29 +1,30 @@
 # Software Testing and Quality Assurance
 
-**Course:** CS320 – Software Testing, Automation, and Quality Assurance  
-**University:** Southern New Hampshire University
-
 ## Overview
 
-This repository contains projects completed for CS320 – Software Testing, Automation, and Quality Assurance at Southern New Hampshire University.
-
-The work focuses on designing Java service applications and using JUnit tests to verify that software requirements are met. The projects include contact, task, and appointment management services with validation rules, service operations, and automated unit tests.
+This repository demonstrates software testing and quality assurance practices using Java and JUnit. It contains three service applications—Contact, Task, and Appointment—along with automated unit tests designed to verify software requirements, validation rules, and service operations.
 
 ## Projects Included
 
 ### Contact Service
 
-The contact service stores and manages contact records while enforcing requirements for contact IDs, names, phone numbers, and addresses.
+The Contact Service manages contact records and enforces validation requirements for contact IDs, names, phone numbers, and addresses.
+
+JUnit tests verify valid contact creation, invalid and null inputs, duplicate identifiers, and service operations such as adding, updating, and deleting contacts.
 
 ### Task Service
 
-The task service supports adding, updating, and deleting tasks while validating task IDs, names, and descriptions.
+The Task Service manages task records and supports adding, updating, and deleting tasks.
+
+Validation rules are applied to task IDs, names, and descriptions, while JUnit tests verify both valid and invalid inputs and expected service behavior.
 
 ### Appointment Service
 
-The appointment service manages appointment records while validating appointment IDs, dates, and descriptions.
+The Appointment Service manages appointment records while enforcing requirements for appointment IDs, dates, and descriptions.
 
-## Technologies Used
+JUnit tests verify appointment creation, invalid and null values, date requirements, duplicate identifiers, and service operations.
+
+## Technologies
 
 - Java
 - JUnit
@@ -31,36 +32,58 @@ The appointment service manages appointment records while validating appointment
 - Object-Oriented Programming
 - Unit Testing
 
+## Testing Approach
+
+Testing was based directly on the software requirements for each service. Test cases were created for both expected and invalid conditions rather than testing only successful execution paths.
+
+The tests verify areas such as:
+
+- Field length and format requirements
+- Required and null values
+- Duplicate identifiers
+- Valid and invalid object creation
+- Add, update, and delete operations
+- Exception handling
+- Service behavior
+
+This requirement-based approach helped ensure that each application behaved according to its specifications and demonstrated how automated testing can identify defects before software is released.
+
 ## Skills Demonstrated
 
-- Writing and executing unit tests
+- Writing and executing JUnit tests
 - Translating software requirements into test cases
-- Validating expected and invalid inputs
+- Testing expected and invalid inputs
 - Object-oriented software design
+- Input validation
 - Exception handling
 - Requirement-based testing
 - Software quality assurance
 - Debugging and code review
 
-## Testing Approach
+## Project Structure
 
-The test classes verify both valid and invalid conditions for each application component. Tests confirm that required fields meet length and format rules, null values are rejected, duplicate identifiers are prevented, and service operations perform as expected.
+Each application includes its primary Java class, service class, and corresponding JUnit tests.
 
-This approach helped ensure that the applications matched the provided requirements rather than relying only on successful program execution.
-
-## Repository Contents
-
-- Contact application and JUnit tests
-- Task application and JUnit tests
-- Appointment application and JUnit tests
-- Project One source files
-- Project Two summary and reflection report
+- `Contact.java`
+- `ContactService.java`
+- `ContactTest.java`
+- `ContactServiceTest.java`
+- `Task.java`
+- `TaskService.java`
+- `TaskTest.java`
+- `TaskServiceTest.java`
+- `Appointment.java`
+- `AppointmentService.java`
+- `AppointmentTest.java`
+- `AppointmentServiceTest.java`
 
 ## What I Learned
 
-This project strengthened my understanding of how automated testing supports functional, reliable, and maintainable software. I learned how to convert requirements into testable conditions, evaluate expected and unexpected inputs, and use JUnit tests to identify defects before software is released.
+These projects strengthened my understanding of how automated testing supports functional, reliable, and maintainable software.
 
-I also learned that testing should be incorporated throughout the development process rather than treated as a final step.
+I learned how to translate written software requirements into testable conditions, evaluate both expected and unexpected inputs, and use JUnit tests to verify application behavior. I also gained experience identifying edge cases and validating that service operations behave correctly when given invalid data.
+
+The projects reinforced the importance of incorporating testing throughout the development process rather than treating testing as a final step.
 
 ## Potential Enhancements
 
